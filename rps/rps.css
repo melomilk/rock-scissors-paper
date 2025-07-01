@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+        to right bottom,
+        rgb(54, 94, 229),
+        rgb(216, 83, 214)
+    );
+}
+
+.wrapper {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    border: 3px solid rgb(201, 201, 201);
+    border-radius: 2em;
+    padding: 1em ;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h3 {
+    color: rgb(109, 153, 255);
+    font-size: 2em;
+}
+
+.choices {
+    display: flex;
+    gap: 1em;
+}
+
+.choices button {
+    padding: 0.5em;
+    border-radius: 0.5em;
+    font-size: 3em;
+    border: 3px solid transparent;
+    background: #f0f0f0;
+    cursor: pointer;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    margin: 0.5em;
+}
+
+.choices button:hover {
+    transform: scale(1.1);
+    border: 3px solid rgb(109, 153, 255);
+    background: white;
+    box-shadow: 0 0 15px rgba(109, 153, 255, 0.3);
+}
+
+#player-choice, #computer-choice {
+    font-size: 1.5em;
+    border: 3px solid rgb(109, 153, 255);
+    border-radius: 0.5em;
+    padding: 10px 50px;
+}
